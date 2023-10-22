@@ -7,7 +7,10 @@ Bottom Line Up Front (BLUF)
 
 This repo is the edited ieee_proposed → floatfixlib  
 place the folder in C:\intelFPGA_lite\22.1std\quartus\libraries\vhdl\ieee  
-or your equivalent Quartus directory and that should be it.
+or your equivalent Quartus directory and  
+use it in your VHDL  
+    library floatfixlib;  
+    use floatfixlib.fixed_pkg.all;  
 ------------------------------------------------------------------------------------
 
 Explanation
