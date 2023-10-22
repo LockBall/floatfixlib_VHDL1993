@@ -5,7 +5,7 @@ ieee_proposed changed to floatfixlib to be compatible with Quartus Prime Lite an
 ## Bottom Line Up Front (BLUF)
 
 
-This repo is the edited ieee_proposed → floatfixlib  
+This repo is the edited `ieee_proposed` → `floatfixlib`  
 place the folder in `C:\intelFPGA_lite\22.1std\quartus\libraries\vhdl\ieee`  
 or your equivalent Quartus directory and use it in your VHDL  
 `library floatfixlib;`  
