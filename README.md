@@ -54,3 +54,5 @@ or your equivalent Quartus directory and use it in your VHDL to allow you to use
 `use floatfixlib.fixed_pkg.all;`   
 
 Please let me know if there are any issues or questions.  
+
+thanks to [Writing Github README](https://medium.com/analytics-vidhya/writing-github-readme-e593f278a796)
