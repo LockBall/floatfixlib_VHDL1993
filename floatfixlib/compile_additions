@@ -1,0 +1,24 @@
+#! /bin/csh -f
+#
+# Script to compile MTI
+\rm -rf floatfixlib
+vlib floatfixlib.lib
+vmap floatfixlib floatfixlib.lib
+if ($MTI_VERSION == "mti5.7") then
+  set VERSION = "-93"
+else
+  set VERSION = "-2002"
+endif
+#set up some compile options
+set OPTIONS = "$VERSION -nologo"
+if ($1 == "quiet") then
+  set OPTIONS = "$OPTIONS -nowarn 3"
+endif
+vcom $OPTIONS -work floatfixlib standard_additions_c.vhdl
+vcom $OPTIONS -work floatfixlib standard_textio_additions_c.vhdl
+vcom $OPTIONS -work floatfixlib std_logic_1164_additions.vhdl
+vcom $OPTIONS -work floatfixlib numeric_std_additions.vhdl
+vcom $OPTIONS -work floatfixlib numeric_std_unsigned_c.vhdl
+vcom $OPTIONS -work floatfixlib fixed_pkg_c.vhdl
+vcom $OPTIONS -work floatfixlib fixed_float_types_c.vhdl
+vcom $OPTIONS -work floatfixlib float_pkg_c.vhdl
