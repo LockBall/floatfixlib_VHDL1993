@@ -14,9 +14,9 @@ or your equivalent Quartus directory and use it in your VHDL
 
 ## Explanation
 
-Quartus used to support VHDL-2008 prior to version 17.  
-Intel decided to monetise this in a despicable manner that is terrible for students and small developers.  
-They proceeded to remove versions of Quartus prior to 17 from available downloads.
+Quartus support for VHDL-2008 is complicated and limited. It is intentionally further limited past version 17 and has different limitation across tiers (lite, std, pro).  
+This is further complicated by device support across tiers. e.g. if you want max10 and VHDL-2008 you need standard, not lite or pro and the correct version. Even then support is limited.  
+They proceeded to remove versions of Quartus prior to 17 from available downloads.  
 
 [Is Intel really cutting VHDL-2008 support from Quartus Prime Lite?](https://community.intel.com/t5/Intel-Quartus-Prime-Software/Is-Intel-really-cutting-VHDL-2008-support-from-Quartus-Prime/td-p/699141)
 
